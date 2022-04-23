@@ -21,6 +21,5 @@ Configure a web server to give access to the `public` subdir.
 For example, with the PHP builtin web server:
 
 ```bash
-cd public/
-php -S localhost:8888
+php artisan serve
 ```
