@@ -18,7 +18,7 @@ composer install
 
 Configure a web server to give access to the `public` subdir.
 
-For example, with the PHP builtin web server:
+For example, with the Laravel builtin web server:
 
 ```bash
 php artisan serve
