@@ -28,15 +28,6 @@
                         <div class="col-md-12" id="div2">
                             &nbsp;
                         </div>
-                        <div class="col-md-12 margin-vert-10">
-                            <form>
-                                <input type="file" id="file-select" name="image[]" multiple="multiple" />
-                            </form>
-                        </div>
-
-                        <div class="col-md-12" id="div2">
-                            &nbsp;
-                        </div>
                         <div class="col-md-4 margin-vert-10">
                             <select class="form-control" id="colorselect2" name="colorselect2"
                                     onchange="{!! $bts->setColor(pm()->select('colorselect2')) !!}; return false;">

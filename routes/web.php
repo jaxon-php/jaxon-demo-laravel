@@ -1,5 +1,8 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DemoController;
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -12,7 +15,9 @@
 */
 
 // Route to demo page
-Route::get('/', 'DemoController@index')->name('demo')->middleware('web');
+Route::get('/', [DemoController::class, 'index'])->name('demo')->middleware('web');
 
 // Route to Jaxon request processor
-Route::post('/jaxon', 'DemoController@jaxon')->name('jaxon')->middleware('web');
+Route::post('/jaxon', function() {
+    return response()->json([]); // This is not supposed to be executed.
+})->middleware(['web', 'jaxon.ajax'])->name('jaxon');
