@@ -16,7 +16,7 @@
         "laravel/tinker": "^2.5",
         "jaxon-php/jaxon-laravel": "^4.0",
         "jaxon-php/jaxon-dialogs": "^4.0",
-        "jaxon-php/jaxon-annotations": "^1.1"
+        "jaxon-php/jaxon-annotations": "^1.2"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
