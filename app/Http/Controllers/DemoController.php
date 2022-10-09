@@ -8,6 +8,7 @@ use Jaxon\Demo\Ajax\Pgw;
 use Jaxon\Laravel\Jaxon;
 
 use function view;
+use function Jaxon\pm;
 
 class DemoController extends Controller
 {
@@ -23,6 +24,8 @@ class DemoController extends Controller
             'bts' => $jaxon->request(Bts::class),
             // Jaxon request to the Pgw Jaxon class
             'pgw' => $jaxon->request(Pgw::class),
+            // Jaxon Parameter Factory
+            'pm' => pm(),
         ]);
     }
 
