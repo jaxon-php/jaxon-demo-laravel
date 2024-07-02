@@ -166,6 +166,9 @@ return [
          * Package Service Providers...
          */
 
+        // Laravel Jaxon
+        Jaxon\Laravel\JaxonServiceProvider::class,
+
         /*
          * Application Service Providers...
          */
@@ -174,9 +177,6 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
-        // Laravel Jaxon
-        Jaxon\Laravel\JaxonServiceProvider::class,
 
     ],
 
