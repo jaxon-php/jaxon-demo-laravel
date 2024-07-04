@@ -6,34 +6,32 @@
             <div class="col-sm-9 content">
                 <h3 class="page-header">{!! $pageTitle !!}</h3>
                 <div class="row">
-                    <div class="col-md-12" jxn-show="@jxnShow($appTest)">
+                    <div class="col-md-12" @jxnShow($appTest)>
                         Initial content : @jxnHtml($appTest)
                     </div>
                     <div class="col-md-4 margin-vert-10">
-                        <select class="form-control" jxn-on="change"
-                            jxn-func="@jxnFunc($appTest->setColor(jq()->val()))">
+                        <select class="form-control" @jxnOn('change', $appTest->setColor(jq()->val()))>
                             <option value="black" selected="selected">Black</option>
                             <option value="red">Red</option>
                             <option value="green">Green</option>
                             <option value="blue">Blue</option>
                         </select>
                     </div>
-                    <div class="col-md-8 margin-vert-10" jxn-show="@jxnShow($rqAppButtons)">
+                    <div class="col-md-8 margin-vert-10" @jxnShow($rqAppButtons)>
                     </div>
 
-                    <div class="col-md-12" jxn-show="@jxnShow($extTest)">
+                    <div class="col-md-12" @jxnShow($extTest)>
                         Initial content : @jxnHtml($extTest)
                     </div>
                     <div class="col-md-4 margin-vert-10">
-                        <select class="form-control" jxn-on="change"
-                            jxn-func="@jxnFunc($extTest->setColor(jq()->val()))">
+                        <select class="form-control" @jxnOn('change', $extTest->setColor(jq()->val()))>
                             <option value="black" selected="selected">Black</option>
                             <option value="red">Red</option>
                             <option value="green">Green</option>
                             <option value="blue">Blue</option>
                         </select>
                     </div>
-                    <div class="col-md-8 margin-vert-10" jxn-show="@jxnShow($rqExtButtons)">
+                    <div class="col-md-8 margin-vert-10" @jxnShow($rqExtButtons)>
                     </div>
                 </div>
             </div> <!-- class="content" -->
