@@ -48,4 +48,4 @@
 </script>
 </div>
 
-@include( 'demo.includes.footer', compact('jaxonJs', 'jaxonScript', 'jaxonCss') )
+@include( 'demo.includes.footer' )

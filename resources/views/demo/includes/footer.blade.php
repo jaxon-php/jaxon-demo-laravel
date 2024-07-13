@@ -4,11 +4,9 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
 
-{!! $jaxonJs !!}
+@jxnJs
 
-{!! $jaxonScript !!}
-
-{!! $jaxonCss !!}
+@jxnScript
 
 <script type="text/javascript">
 jaxon.config.postHeaders = {'X-CSRF-TOKEN': "{!! csrf_token() !!}"};

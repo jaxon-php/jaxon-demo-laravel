@@ -15,9 +15,4 @@ use App\Http\Controllers\DemoController;
 */
 
 // Route to demo page
-Route::get('/', [DemoController::class, 'index'])->name('demo')->middleware('web');
-
-// Route to Jaxon request processor
-Route::post('/jaxon', function() {
-    return response()->json([]); // This is not supposed to be executed.
-})->middleware(['web', 'jaxon.ajax'])->name('jaxon');
+Route::get('/', [DemoController::class, 'index'])->name('demo')->middleware(['web', 'jaxon.config']);

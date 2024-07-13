@@ -7,6 +7,10 @@ $directory = base_path('jaxon/ajax');
 
 return [
     'app' => [
+        'request' => [
+            'route' => 'jaxon',
+            'middlewares' => ['web'],
+        ],
         'directories' => [
             $directory => [
                 'namespace' => '\\Jaxon\\Demo\\Ajax',
