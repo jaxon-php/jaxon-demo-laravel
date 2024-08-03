@@ -17,6 +17,8 @@
 
     <!-- Custom styles for this template -->
     <link href="/css/style.css" rel="stylesheet" />
+
+@jxnCss
 </head>
 
 <body>
