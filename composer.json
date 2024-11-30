@@ -14,9 +14,9 @@
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.12",
         "laravel/tinker": "^2.5",
-        "jaxon-php/jaxon-laravel": "v5.x-dev",
-        "jaxon-php/jaxon-dialogs": "v5.x-dev",
-        "jaxon-php/jaxon-annotations": "v5.x-dev",
+        "jaxon-php/jaxon-laravel": "dev-main",
+        "jaxon-php/jaxon-dialogs": "dev-main",
+        "jaxon-php/jaxon-annotations": "dev-main",
         "psr/log": "1.1.*"
     },
     "require-dev": {
