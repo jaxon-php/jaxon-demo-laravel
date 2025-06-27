@@ -1,9 +1,9 @@
 <?php
 
-use Jaxon\Demo\Service\Example;
-use Jaxon\Demo\Service\ExampleInterface;
+use Demo\Service\Example;
+use Demo\Service\ExampleInterface;
 
-$directory = base_path('jaxon/ajax');
+$directory = base_path('ajax');
 
 return [
     'app' => [
@@ -12,11 +12,15 @@ return [
             'middlewares' => ['web'],
         ],
         'directories' => [
-            $directory => [
-                'namespace' => '\\Jaxon\\Demo\\Ajax',
-                'register' => false,
-                // 'separator' => '', // '.' or '_'
-                // 'protected' => [],
+            [
+                'path' => $directory,
+                'namespace' => 'Demo\\Ajax',
+            ],
+        ],
+        'dialogs' => [
+            'default' => [
+                'modal' => 'bootbox',
+                'alert' => 'cute',
             ],
         ],
         'container' => [
@@ -55,24 +59,6 @@ return [
                 // 'dir' => '',
                 'export' => false,
                 'minify' => false,
-            ],
-        ],
-        'dialogs' => [
-            'libraries' => ['pgwjs'],
-            'default' => [
-                'modal' => 'bootstrap',
-                'message' => 'toastr',
-            ],
-            'toastr' => [
-                'options' => [
-                    'closeButton' => true,
-                    'positionClass' => 'toast-top-center'
-                ],
-            ],
-            'assets' => [
-                'include' => [
-                    'all' => true,
-                ],
             ],
         ],
     ],

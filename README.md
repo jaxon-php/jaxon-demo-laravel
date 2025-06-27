@@ -3,7 +3,7 @@ Jaxon demo for the Laravel framework
 
 Demo of the [Jaxon integration for the Laravel framework](https://github.com/jaxon-php/jaxon-laravel).
 
-The Jaxon classes are in the `jaxon/ajax` subdir.
+The Jaxon classes in the `ajax` subdir are registered.
 
 Installation
 ------------
@@ -17,7 +17,6 @@ composer install
 ```
 
 Configure a web server to give access to the `public` subdir.
-
 For example, with the Laravel builtin web server:
 
 ```bash
