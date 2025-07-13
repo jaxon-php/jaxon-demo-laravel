@@ -9,7 +9,7 @@ $directory = base_path('ajax');
 return [
     'app' => [
         'request' => [
-            'route' => 'jaxon',
+            'route' => 'jaxon.ajax',
             'middlewares' => ['web'],
         ],
         'directories' => [
