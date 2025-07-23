@@ -41,7 +41,7 @@
                 <div class="mt-3">Calculator</div>
 
                 <div>
-                    {!! $calcPackage->getHtml() !!}
+                    @jxnPackage(Jaxon\Demo\Calc\Package::class)
                 </div>
             </div>
         </div> <!-- class="row" -->
